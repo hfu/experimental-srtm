@@ -13,7 +13,7 @@ def in_coverage?(z, x, y)
   return (lat(2 ** z, y) > -56) && (lat(2 ** z, y + 1) < 60)
 end
 
-1.upto(10) {|z|
+1.upto(6) {|z|
   n = 2 ** z
   n.times {|x|
     n.times {|y|
